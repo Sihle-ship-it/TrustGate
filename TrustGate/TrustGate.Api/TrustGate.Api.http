@@ -1,0 +1,6 @@
+@TrustGate.Api_HostAddress = http://localhost:5219
+
+GET {{TrustGate.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

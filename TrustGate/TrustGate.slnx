@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/TrustGate.Api/">
+    <Project Path="TrustGate.Api/TrustGate.Api.csproj" />
+  </Folder>
+</Solution>
