@@ -28,6 +28,16 @@ namespace TrustGate.Api.Data
                 );
 
             // Seed an admin
+            modelBuilder.Entity<User>()
+                .HasData(new User
+                {
+                    Id = 1,
+                    Username = "admin",
+                    Email = "admin@trustgate.local",
+                    Password = "admin123",
+                    Role = "Admin",
+                    IsActive = true
+                });
 
         }
     }
