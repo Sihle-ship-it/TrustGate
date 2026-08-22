@@ -1,1 +1,22 @@
-<p>requests works!</p>
+<h2>Request Access</h2>
+    <select [(ngModel)]="userId">
+      <option *ngFor="let u of users" [value]="u.id">{{ u.username }}</option>
+    </select>
+    <select [(ngModel)]="entitlementId">
+      <option *ngFor="let e of entitlements" [value]="e.id">
+        {{ e.systemName }}.{{ e.permission }} ({{ e.riskLevel }})
+      </option>
+    </select>
+    <input [(ngModel)]="reason" placeholder="Reason" />
+    <button (click)="submit()">Submit</button>
+
+    <h3>All Requests</h3>
+    <table>
+      <tr *ngFor="let r of requests">
+        <td>{{ r.id }}</td>
+        <td>User {{ r.userId }}</td>
+        <td>Entitlement {{ r.entitlementId }}</td>
+        <td>{{ r.status }}</td>
+        <td>{{ r.reason }}</td>
+      </tr>
+    </table>

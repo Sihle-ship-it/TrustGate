@@ -1,1 +1,15 @@
-<p>admin works!</p>
+<h2>Approvals</h2>
+    <label>Your admin username: <input [(ngModel)]="admin" /></label>
+    <table>
+      <tr *ngFor="let r of pending()">
+        <td>
+          #{{ r.id }} — User {{ r.userId }} wants Entitlement
+          {{ r.entitlementId }}
+        </td>
+        <td>{{ r.reason }}</td>
+        <td>
+          <button (click)="decide(r.id, true)">Approve</button>
+          <button (click)="decide(r.id, false)">Reject</button>
+        </td>
+      </tr>
+    </table>
