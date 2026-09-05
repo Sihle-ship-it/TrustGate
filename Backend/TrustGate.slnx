@@ -2,7 +2,9 @@
   <Folder Name="/TrustGate.Api/">
     <Project Path="TrustGate.Api/TrustGate.Api.csproj" />
   </Folder>
-  <Folder Name="/TrustGate.Application/" />
+  <Folder Name="/TrustGate.Application/">
+    <Project Path="TrustGate.Application/TrustGate.Application.csproj" Id="66482c10-d988-4941-ba4e-7c0451da6ed1" />
+  </Folder>
   <Folder Name="/TrustGate.Domain/">
     <Project Path="TrustGate.Domain/TrustGate.Domain.csproj" Id="34c1f859-aca6-4485-8ba7-11cdbe8eab19" />
   </Folder>
